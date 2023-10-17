@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: #485461;
+            background-image: linear-gradient(315deg, #485461 0%, #8d98a3 74%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    
+        .box{
+            
+            height: 950px;
+            width: 490px;
+            background: linear-gradient(to top, rgb(251, 194, 235) 0%, rgb(166, 192, 238) 100%);            border-radius: 40px;
+            padding: 70px;
+            padding-top: 0ch;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            gap:60px;
+            box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+            font-size: large;
+            
+        }
+
+        .box img{
+            height:30%;
+            width: 500px;
+            filter: grayscale(0.20);
+            
+        }
+
+        .box:hover{
+            transform:scale(1.2);
+            transition: 400ms;
+            box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+            filter: grayscale(.3);
+            opacity: .9;
+        }
+        .box h1{
+            font-weight: bold;
+            font-size: 1.7rem;
+            
+        }
+        .charge p{
+            justify-content: left;
+        }
+        .charge img{
+            justify-content: left;
+        }
+        .charge p{
+            justify-content: right;
+        }
+        .charge{
+            background-color: rgb(255, 255, 255);
+            height: 100px;
+            width: 400px;
+            border-radius: 23px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border: 3px solid black;
+             justify-content: space-between; 
+            
+        }
+
+        .charge img{
+            width: 70px;
+            height: 40px;
+            border: 2px solid black;
+            
+        }
+        #proceed{
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            padding: 20px;
+            border: 3px solid black;
+            border-radius: 23px;
+            box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);            
+
+        }
+
+        #cancel{
+            text-decoration: none;
+            color: #485461;
+            font-weight: bold;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            
+            <img src="paris.jpg" alt="qr">
+            <h1>Your Trip to PARIS !!!</h1>
+            <p>This trip make you relive and refresh yourself with all management duties on us, you just enjoy Lorem ipsum dolo</p>
+            <div class="charge">
+                <img src="pay.png" alt="Change plan" >
+                <div>
+                    <p>Plan Pricing </p>
+                    <P>$1000</P>
+                </div>
+                <a href="#">Change plan</a>
+            </div>
+            <div>
+            <button id="proceed"><p>Proceed to Payment</p></button>
+            </div>
+            <div>
+            <a href="#" id="Cancel">Cancel Planning</a>
+            </div>
+    </div>z
+</body>
+</html>
